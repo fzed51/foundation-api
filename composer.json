@@ -34,7 +34,7 @@
     "firebase/php-jwt": "pour la gestion des JWT",
     "fzed51/respect-validation-wrapper": "pour simplifier la validation",
     "fzed51/spicy-mash": "pour simplifier l'utilisation d'openSSL",
-    "phpmailer/phpmailer": "pour l'es envoie d'e-mail",
+    "phpmailer/phpmailer": "pour l'es envoie d'e-mail"
   },
   "config": {
     "sort-packages": true
@@ -42,7 +42,7 @@
   "autoload-dev": {
     "psr-4": {
       "Test\\": "./test",
-      "Api\\": "./test/Api",
+      "Api\\": "./test/Api"
     }
   },
   "autoload": {
