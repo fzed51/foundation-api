@@ -1,6 +1,6 @@
 {
-    "Major":  1,
-    "Minor":  0,
-    "Patch":  0,
-    "PreRelease":  "PRE"
+    "major": 1,
+    "minor": 0,
+    "patch": 0,
+    "preRelease": "pre"
 }

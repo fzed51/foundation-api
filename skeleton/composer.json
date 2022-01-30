@@ -15,9 +15,14 @@
     "ext-json": "*",
     "ext-openssl": "*",
     "ext-pdo": "*",
-    "fzed51/foundation-api": "^1.0",
+    "fzed51/foundation-api": "^1.0"
   },
   "require-dev": {
+    "fzed51/version": "^1.1",
+    "ocramius/package-versions": "^2.1",
+    "phpstan/phpstan": "^0.12.88",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6"
   },
   "config": {
     "sort-packages": true
@@ -25,7 +30,7 @@
   "autoload-dev": {
     "psr-4": {
       "Test\\": "./test",
-      "Api\\": "./test/Api",
+      "Api\\": "./test/Api"
     }
   },
   "autoload": {
@@ -66,6 +71,10 @@
     "publish": [
       "php -r \"exec('git status -s', $sta);if (!empty($sta)) exit(1);\"",
       "git archive HEAD --format zip -8 -o api-port-services.zip"
-    ]
+    ],
+    "version": "version-manager",
+    "_version:maj": "version-manager -u major",
+    "_version:min": "version-manager -u minor",
+    "_version:pat": "version-manager -u patch"
   }
 }
